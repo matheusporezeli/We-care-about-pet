@@ -1,0 +1,136 @@
+:root {
+    --cinza-escuro: #515151;
+    --cinza-medio: #848484;
+    --cinza-claro: #989D9C;
+    --roxo: #665AE1;
+    --verde: #ADFF00;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.nav-bar {
+    margin: 44px 76px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.lista-itens {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.login {
+    padding: 6px 21px;
+    color: #ffffff;
+    background: var(--roxo);
+    border-radius: 20px;
+}
+
+.sessao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8rem;
+    gap: 5rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: var(--cinza-escuro);
+}
+
+.secundario {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: var(--cinza-escuro);
+}
+
+.paragrafo {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--cinza-medio);
+    margin: 1rem 0 2rem;
+}
+
+.botao {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 28px;
+    width: 147px;
+    height: 26px;
+    background: var(--verde);
+    border-radius: 20px;
+    padding: 15px 46px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+@media (max-width: 720px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .sessao {
+        flex-direction: column;
+        padding: 149px 14px;
+        gap: 1.5rem;
+    }
+
+    .sessao img {
+        width: 100%;
+    }
+
+    .texto {
+        align-items: center;
+    }
+
+    .principal {
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .secundario {
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 2rem;
+    }
+
+    .paragrafo {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .nav-bar {
+        margin: 12px;
+    }
+
+    .lista {
+        margin: 24px;
+        justify-content: space-between;
+    }
+
+    .sessao {
+        flex-direction: column;
+    }
+}
